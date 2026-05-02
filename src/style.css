@@ -1,13 +1,13 @@
+:root {
+  --blue-color: #00acdc;
+}
+
 body {
   margin: 0;
   font-family: Roboto, sans-serif;
   font-weight: 500;
   font-style: normal;
   background-color: #f5eeee;
-}
-
-:root {
-  --blue-color: #00acdc;
 }
 
 .head {
@@ -21,18 +21,18 @@ body {
   background-color: #fff;
 }
 
-.nav ul {
+.list {
   display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-li {
+.item {
   margin-right: 20px;
 }
 
-.nav li:last-child {
+.item:last-child {
   margin-right: 0;
 }
 
@@ -45,18 +45,16 @@ li {
   color: #000;
   text-decoration: none;
   font-size: 12px;
-}
-
-.link.is-active {
   line-height: 100%;
   letter-spacing: 0%;
+}
+
+.link:hover {
   color: var(--blue-color);
 }
 
-.logo {
-  width: 40px;
-  height: 40px;
-  display: block;
+.link.is-active {
+  color: var(--blue-color);
 }
 
 .link.is-active::after {
@@ -69,6 +67,8 @@ li {
   background-color: var(--blue-color);
 }
 
-.link[data-qa='hover'] {
-  color: var(--blue-color);
+.logo {
+  width: 40px;
+  height: 40px;
+  display: block;
 }
