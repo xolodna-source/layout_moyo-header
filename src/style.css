@@ -47,8 +47,6 @@ body {
   letter-spacing: 0;
   box-sizing: border-box;
   white-space: nowrap;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 .link:hover {
@@ -68,6 +66,7 @@ body {
   height: 4px;
   background-color: var(--blue-color);
   pointer-events: none;
+  border-radius: 8px;
 }
 
 .logo {
